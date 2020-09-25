@@ -1,4 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# My page
+
+Your personal website, landing page, projects portfolio and more.
+
+Built with [Reactjs](https://reactjs.org/) and [SCSS](https://sass-lang.com/).
+
+## Includes
+
+1. A place to introduce yourself (name, description, social networks or links).
+2. A timeline with your recent acquired knowlegde.
+3. A panel for all your projects to show (name, description, link).
+4. A footer I would love you to keep in your website.
+
+## Demo
+
+To be hosted.
 
 ## Available Scripts
 

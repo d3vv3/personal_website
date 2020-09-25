@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// External libraries
+import React from "react";
+
+// Theme imports
+
+// Local imports
+import Introduction from "./components/Introduction";
+import Timeline from "./components/Timeline";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
+
+// Data imports
+// import { myData } from "./data/data.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Introduction />
+      <Timeline />
+      <Projects />
+      <Footer />
     </div>
   );
 }

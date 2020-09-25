@@ -1,0 +1,70 @@
+.Projects {
+  @include flexCenter(column);
+
+  background-color: white;
+  background: conic-gradient(from 180deg at left, $blueGrey, #fff);
+
+  padding-bottom: 40px;
+
+  h1 {
+    color: black;
+    margin: 40px;
+    font-size: 4vh;
+  }
+
+  .row {
+    @include flexCenter(row);
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    width: 100vw;
+
+    @media only screen and (min-width: 800px) {
+      width: 60vw;
+    }
+  }
+
+  .card {
+    background-color: white;
+
+    // Size
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+    margin: 20px;
+
+    // Shadow
+    box-shadow: 5px 6px 22px -9px rgba(0, 0, 0, 0.61);
+
+    // Transition
+    transition: transform 0.2s;
+
+    // Zoom on hover
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    .content {
+      height: 100%;
+
+      @include flexCenter(column);
+      justify-content: space-around;
+
+      h3 {
+        padding-top: 20px;
+        margin: 0;
+      }
+
+      p {
+        line-height: 1.5;
+        padding-left: 30px;
+        padding-right: 30px;
+        text-align: left;
+      }
+      a {
+        color: black;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
