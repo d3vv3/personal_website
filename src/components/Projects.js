@@ -60,7 +60,7 @@ function Projects() {
             <div className="content">
               <h3>ChatStats</h3>
               <p>A tool to visualize Telegram and Whatsapp chat statistics.</p>
-              <a href="">
+              <a href="https://github.com/d3vv3/chatstats">
                 <FontAwesomeIcon icon={faGithub} size="lg" />
               </a>
             </div>
