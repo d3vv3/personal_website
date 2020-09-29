@@ -2,6 +2,7 @@
   @include flexCenter(column);
 
   background-color: white;
+  background: linear-gradient(140deg, $blueGrey, white);
   background: conic-gradient(from 180deg at left, $blueGrey, #fff);
 
   padding-bottom: 40px;
