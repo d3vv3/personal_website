@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  personal-website:
+    build: .
+    image: personal-website
+    restart: unless-stopped
+    ports:
+      - 5001:5000
