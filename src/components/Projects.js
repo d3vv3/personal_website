@@ -9,6 +9,7 @@ import "../styles/style.scss";
 // Assets
 // Assets
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Projects() {
@@ -21,9 +22,14 @@ function Projects() {
             <div className="content">
               <h3>My bike</h3>
               <p>Follow your bike needs with a beautiful flutter app.</p>
-              <a href="https://github.com/d3vv3/my_bike">
-                <FontAwesomeIcon icon={faGithub} size="lg" />
-              </a>
+              <div className="row contained">
+                <a href="https://github.com/d3vv3/my_bike">
+                  <FontAwesomeIcon icon={faGithub} size="lg" />
+                </a>
+                <a href="#">
+                  <FontAwesomeIcon icon={faLink} size="lg" />
+                </a>
+              </div>
             </div>
           </div>
           <div className="card">
@@ -51,27 +57,42 @@ function Projects() {
                 @movo: <br /> A tool to visualize a vehicle location and status
                 history.
               </p>
-              <a href="">
-                <FontAwesomeIcon icon={faGithub} size="lg" />
-              </a>
+              <div className="row contained">
+                <a href="">
+                  <FontAwesomeIcon icon={faGithub} size="lg" />
+                </a>
+                <a href="https://capsule.movo.me">
+                  <FontAwesomeIcon icon={faLink} size="lg" />
+                </a>
+              </div>
             </div>
           </div>
           <div className="card">
             <div className="content">
               <h3>ChatStats</h3>
               <p>A tool to visualize Telegram and Whatsapp chat statistics.</p>
-              <a href="https://github.com/d3vv3/chatstats">
-                <FontAwesomeIcon icon={faGithub} size="lg" />
-              </a>
+              <div className="row contained">
+                <a href="https://github.com/d3vv3/chatstats">
+                  <FontAwesomeIcon icon={faGithub} size="lg" />
+                </a>
+                <a href="https://chatstats.devve.space">
+                  <FontAwesomeIcon icon={faLink} size="lg" />
+                </a>
+              </div>
             </div>
           </div>
           <div className="card">
             <div className="content">
               <h3>MyPage</h3>
               <p>A website to show yourself and portfolio your work. </p>
-              <a href="">
-                <FontAwesomeIcon icon={faGithub} size="lg" />
-              </a>
+              <div className="row contained">
+                <a href="https://github.com/d3vv3/my_website">
+                  <FontAwesomeIcon icon={faGithub} size="lg" />
+                </a>
+                <a href="https://devve.space">
+                  <FontAwesomeIcon icon={faLink} size="lg" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
