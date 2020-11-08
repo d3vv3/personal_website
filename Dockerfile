@@ -1,5 +1,6 @@
 # pull official base image
-FROM node:13.12.0-alpine
+# FROM node:13.12.0-slim
+FROM node:15.1-buster-slim
 
 # set working directory
 WORKDIR /app
@@ -9,7 +10,7 @@ COPY . .
 
 # install app dependencies
 RUN npm install --silent
-RUN npm install react-scripts -g
+RUN npm install react-scripts -g --silent
 RUN npm run-script build
 RUN npm install -g serve
 
