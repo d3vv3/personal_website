@@ -1,4 +1,4 @@
-FROM node:13.12.0-alpine
+FROM node:14.1-alpine
 
 WORKDIR /app
 
@@ -7,9 +7,10 @@ ENV PATH /app/node_modules/.bin:$PATH
 
 COPY . .
 
-RUN npm install --silent
-RUN npm install react-scripts@3.4.1 -g --silent
-RUN npm run-script build
-RUN npm install -g serve
+RUN npm install yarn
+RUN yarn install
+RUN yarn add react-scripts@3.4.1 -g
+RUN yarn run build
+RUN yarn add serve -g 
 
 CMD ["npx", "serve", "-s", "build"]
