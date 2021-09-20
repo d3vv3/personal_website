@@ -1,0 +1,48 @@
+.introduction {
+    @include flexCenter(column);
+    padding-top: clamp(100px, 10%, 200px);
+    width: 100%;
+    // padding-bottom: clamp(200px, 15%, 400px);
+
+    .wave {
+        font-size: 1.4em;
+        animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+        animation-duration: 2.5s;        /* Change to speed up or slow down */
+        animation-iteration-count: 2;    /* Run only twice :) */
+        transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+        display: inline-block;
+    }
+
+    @keyframes wave-animation {
+        0% { transform: rotate( 0.0deg) }
+       10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+       20% { transform: rotate(-8.0deg) }
+       30% { transform: rotate(14.0deg) }
+       40% { transform: rotate(-4.0deg) }
+       50% { transform: rotate(10.0deg) }
+       60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+      100% { transform: rotate( 0.0deg) }
+    }
+
+    .salut {
+        display: inline;
+    }
+
+
+    .impact {
+        text-align: center;
+        color: $impact1;
+        margin: 0;
+        max-width: 600px;
+        line-height: 1.0;
+        font-weight: 700;
+        font-size: clamp(1.4em, 3.4em, 3.8em);
+    }
+
+    .second-read {
+        text-align: center;
+        width: clamp(200px, 80%, 800px);
+        font-weight: 400;
+        font-size: 1.2em;
+    }
+}

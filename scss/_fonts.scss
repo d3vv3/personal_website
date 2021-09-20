@@ -1,0 +1,38 @@
+$opensans-font-path: "../fonts/opensans";
+
+
+@font-face {
+    src: url("#{$opensans-font-path}/OpenSans-Light.ttf") format("ttf");
+
+    font-family: "OpenSans";
+    font-weight: 300;
+}
+
+@font-face {
+    src: url("#{$opensans-font-path}/OpenSans-Regular.ttf") format("ttf");
+
+    font-family: "OpenSans";
+    font-weight: 400;
+}
+
+@font-face {
+    src: url("#{$opensans-font-path}/OpenSans-SemiBold.ttf") format("ttf");
+
+    font-family: "OpenSans";
+    font-weight: 600;
+}
+
+@font-face {
+    src: url("#{$opensans-font-path}/OpenSans-Bold.ttf") format("ttf");
+
+    font-family: "OpenSans";
+    font-weight: 700;
+}
+
+
+@font-face {
+    src: url("#{$opensans-font-path}/OpenSans-ExtraBold.ttf") format("ttf");
+
+    font-family: "OpenSans";
+    font-weight: 800;
+}

@@ -1,0 +1,68 @@
+.about {
+    width: 100%;
+    @include flexCenter(column);
+    // margin-bottom: clamp(50px, 15%, 100px);
+    .title {
+        color: $black;
+        text-align: center;
+        font-size: clamp(1.4em, 2.5em, 3.8em);
+    }
+    .about-display {
+        @include flexCenter(row);
+        flex-wrap: wrap;
+        align-items: flex-start;
+        // background-color: red;
+        margin: clamp(20px, 200px, 300px);
+        margin-top: clamp(20px, 50px, 100px);
+        margin-bottom: clamp(20px, 50px, 100px);
+        // height: inherit;
+        width: clamp(200px, 80%, 800px);
+        line-height: 1.4;
+
+        .me {
+            flex: 2;
+            height: clamp(20px, 200px, 300px);
+            object-fit: contain;
+        }
+        .description {
+            flex: 8;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            // background-color: blue;
+
+            span {
+                color: $black;
+                font-weight: bold;
+            }
+
+            .section {
+                margin-bottom: 40px;
+
+                span {
+                    color: $black;
+                    font-weight: bold;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $impact1;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .socialNetworks {
+        @include flexCenter(row);
+        width: 300px;
+
+        a {
+          color: black;
+          padding-bottom: 20px;
+
+          .logo {
+              height: 20px;
+          }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+// .display {
+//     display: grid;
+//     grid-template-columns: [c1] 33% [c2] 34% [c3] 33% [c4];
+//     grid-template-rows: [r1] 25% [r2] 25% [r3] 25% [r4] 25%;
+//     grid-template-areas:
+//         "photo1 photo1 . ."
+//         ". . photo2 photo2"
+//         "imag31 photo3 . ."
+//         ". . photo4 photo4"
+// }
+.art {
+    margin-top: clamp(100px, 10%, 200px);
+    width: 100%;
+    overflow: hidden;
+    background-color: $secondaryBlack;
+    @include flexCenter(column);
+
+    .display {
+        overflow: visible;
+        width: 100%;
+        margin: clamp(10px, 200px, 300px);
+        @include flexCenter(row);
+        flex-wrap: wrap;
+
+        .photo-container {
+            width: 300px;
+            height: 100%;
+            @include flexCenter(row);
+        }
+
+        .polaroid {
+            z-index: 0;
+            background-color: $white;
+            object-fit: contain;
+            transform: rotate(-30 + random(60) + deg);
+
+            // Shadow
+            box-shadow: 5px 6px 22px -9px rgba(0, 0, 0, 0.61);
+
+            // Transition
+            transition: transform 0.2s;
+
+            // Zoom on hover
+            &:hover {
+              transform: scale(1.6);
+              z-index: 1;
+            }
+        }
+
+        .vertical {
+            height: clamp(150px, 300px, 400px);
+            padding: 20px;
+            padding-top: 40px;
+            padding-bottom: 80px;
+            border-radius: 2px 2px 8px 8px;
+        }
+
+        .horizontal {
+            width: clamp(150px, 300px, 400px);
+            padding: 20px;
+            padding-right: 40px;
+            padding-left: 80px;
+            border-radius: 8px 2px 2px 8px;
+        }
+
+        @for $i from 1 through 4 {
+
+            .random-rotation-#{$i} {
+                transform: rotate(-30 + random(60) + deg);
+            }
+        }
+
+    }
+
+}

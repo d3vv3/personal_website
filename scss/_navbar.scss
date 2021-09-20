@@ -1,0 +1,28 @@
+.navbar {
+    @include flexCenter(row);
+    width: clamp(80%, 80%, 90%);
+    justify-content: space-between;
+    align-items: center;
+    padding-top: clamp(40px, 5%, 100px);
+
+    a {
+        color: $black;
+        text-decoration: none;
+        padding-left: 20px;
+    }
+
+    .impact {
+        font-size: 1.2em;
+        font-weight: 800;
+    }
+
+    .right {
+        @include flexCenter(row);
+        width: auto;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+
+    }
+
+}

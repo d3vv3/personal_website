@@ -1,0 +1,66 @@
+.skills {
+    background-color: $secondaryBlack;
+    width: 100%;
+    @include flexCenter(column);
+    // margin-bottom: clamp(50px, 15%, 100px);
+    padding-top: clamp(10px, 20px, 50px);
+    // padding-bottom: clamp(50px, 15%, 200px);
+
+    .title {
+        color: $white;
+        text-align: center;
+        font-size: clamp(1.4em, 2.5em, 3.8em);
+    }
+    .display {
+        margin: clamp(20px, 200px, 300px);
+        margin-top: clamp(20px, 100px, 120px);
+        // margin-bottom: clamp(20px, 80px, 100px);
+        width: clamp(200px, 80%, 800px);
+        height: inherit;
+        color: $white;
+        display: grid;
+        grid-template-columns: [c1] 20% [c2] 20% [c3] 20% [c4] 20% [c5] 20% [c6];
+        grid-template-rows: [r1] 20% [r2] 20% [r3] 20% [r4] 20% [r5] 20 [r6];
+        grid-template-areas:
+            ". skill1 . skill2 ."
+            "skill3 . skill4 . skill5"
+            ". skill6 . skill7 ."
+            "skill8 . skill9 . skill10"
+            ". skill11 . skill12 .";
+
+        @for $i from 1 through 12 {
+            .skill-#{$i} {
+                // background-color: red;
+                opacity: 0.0;
+                -webkit-animation: pulsate#{$i} 3s ease-in-out;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-delay: #{$i * 0.3 + 3}s;
+                grid-area: skill#{$i};
+                width: 100%;
+                text-align: center;
+
+                &:hover {
+                    animation-play-state: paused;
+                    animation: step-end;
+                    opacity: 1.0;
+                }
+            }
+        }
+
+        @for $i from 1 through 12 {
+
+            @-webkit-keyframes pulsate#{$i} {
+                0% {
+                    opacity: 0.0;
+                }
+                50% {
+                    opacity: 1.0;
+                }
+                100% {
+                    opacity: 0.0;
+                }
+            }
+        }
+
+    }
+}

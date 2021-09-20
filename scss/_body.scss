@@ -1,0 +1,27 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    @include flexCenter(column);
+    scroll-behavior: smooth;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+
+    .highlight-yellow {
+        background: linear-gradient(180deg,rgba(255,255,255,0) 50%, $impact2 50%);
+    }
+
+    .highlight-purple {
+        background: linear-gradient(180deg,rgba(255,255,255,0) 50%, $impact3 50%);
+    }
+
+    .upper-curve {
+        width: 100%;
+        transform: translateY(10px);
+    }
+
+    .lower-curve {
+        width: 100%;
+        transform: translateY(-10px) scaleY(-1);
+    }
+} // body
