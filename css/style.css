@@ -660,7 +660,7 @@ body .lower-curve {
   z-index: 0;
   background-color: #ffffff;
   object-fit: contain;
-  transform: rotate(-13deg);
+  transform: rotate(24deg);
   box-shadow: 5px 6px 22px -9px rgba(0, 0, 0, 0.61);
   transition: transform 0.2s;
 }
@@ -683,22 +683,27 @@ body .lower-curve {
   border-radius: 8px 2px 2px 8px;
 }
 .art .display .random-rotation-1 {
-  transform: rotate(27deg);
-}
-.art .display .random-rotation-2 {
   transform: rotate(29deg);
 }
+.art .display .random-rotation-2 {
+  transform: rotate(-8deg);
+}
 .art .display .random-rotation-3 {
-  transform: rotate(5deg);
+  transform: rotate(4deg);
 }
 .art .display .random-rotation-4 {
-  transform: rotate(8deg);
+  transform: rotate(30deg);
 }
 
 .footer {
   padding-bottom: 10px;
   padding-left: 30px;
   color: #1d1d1d;
+}
+.footer a {
+  text-decoration: none;
+  color: #3f37c9;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

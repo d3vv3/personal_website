@@ -3,4 +3,10 @@
     padding-bottom: 10px;
     padding-left: 30px;
     color: $secondaryBlack;
+
+    a {
+        text-decoration: none;
+        color: $impact1;
+        font-weight: bold;
+    }
 }
