@@ -57,7 +57,7 @@ body .lower-curve {
   align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: clamp(80%, 80%, 90%);
+  width: 80%;
   justify-content: space-between;
   align-items: center;
   padding-top: clamp(40px, 5%, 100px);
@@ -94,14 +94,10 @@ body .lower-curve {
 }
 .introduction .wave {
   font-size: 1.4em;
-  animation-name: wave-animation;
-  /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.5s;
-  /* Change to speed up or slow down */
-  animation-iteration-count: 2;
-  /* Run only twice :) */
-  transform-origin: 70% 70%;
-  /* Pivot around the bottom-left palm */
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: 2; /* Run only twice :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
 }
 @keyframes wave-animation {
@@ -110,8 +106,7 @@ body .lower-curve {
   }
   10% {
     transform: rotate(14deg);
-  }
-  /* The following five values can be played with to make the waving more or less extreme */
+  } /* The following five values can be played with to make the waving more or less extreme */
   20% {
     transform: rotate(-8deg);
   }
@@ -126,8 +121,7 @@ body .lower-curve {
   }
   60% {
     transform: rotate(0deg);
-  }
-  /* Reset for the last half to pause */
+  } /* Reset for the last half to pause */
   100% {
     transform: rotate(0deg);
   }
@@ -142,7 +136,7 @@ body .lower-curve {
   max-width: 600px;
   line-height: 1;
   font-weight: 700;
-  font-size: clamp(1.4em, 3.4em, 3.8em);
+  font-size: 3.4em;
 }
 .introduction .second-read {
   text-align: center;
@@ -170,7 +164,7 @@ body .lower-curve {
 .work-container .work .title {
   color: #ffffff;
   text-align: center;
-  font-size: clamp(1.4em, 2.5em, 3.8em);
+  font-size: 2.5em;
 }
 .work-container .work .work-display {
   display: flex;
@@ -240,7 +234,7 @@ body .lower-curve {
 .about .title {
   color: #272341;
   text-align: center;
-  font-size: clamp(1.4em, 2.5em, 3.8em);
+  font-size: 2.5em;
 }
 .about .about-display {
   display: flex;
@@ -250,15 +244,15 @@ body .lower-curve {
   flex-wrap: nowrap;
   flex-wrap: wrap;
   align-items: flex-start;
-  margin: clamp(20px, 200px, 300px);
-  margin-top: clamp(20px, 50px, 100px);
-  margin-bottom: clamp(20px, 50px, 100px);
+  margin: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   width: clamp(200px, 80%, 800px);
   line-height: 1.4;
 }
 .about .about-display .me {
   flex: 2;
-  height: clamp(20px, 200px, 300px);
+  height: 200px;
   object-fit: contain;
 }
 .about .about-display .description {
@@ -306,16 +300,16 @@ body .lower-curve {
   align-items: center;
   flex-direction: column;
   flex-wrap: nowrap;
-  padding-top: clamp(10px, 20px, 50px);
+  padding-top: 20px;
 }
 .skills .title {
   color: #ffffff;
   text-align: center;
-  font-size: clamp(1.4em, 2.5em, 3.8em);
+  font-size: 2.5em;
 }
 .skills .display {
-  margin: clamp(20px, 200px, 300px);
-  margin-top: clamp(20px, 100px, 120px);
+  margin: 200px;
+  margin-top: 100px;
   width: clamp(200px, 80%, 800px);
   height: inherit;
   color: #ffffff;
@@ -639,7 +633,7 @@ body .lower-curve {
 .art .display {
   overflow: visible;
   width: 100%;
-  margin: clamp(10px, 200px, 300px);
+  margin: 200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -660,7 +654,7 @@ body .lower-curve {
   z-index: 0;
   background-color: #ffffff;
   object-fit: contain;
-  transform: rotate(24deg);
+  transform: rotate(-18deg);
   box-shadow: 5px 6px 22px -9px rgba(0, 0, 0, 0.61);
   transition: transform 0.2s;
 }
@@ -669,30 +663,30 @@ body .lower-curve {
   z-index: 1;
 }
 .art .display .vertical {
-  height: clamp(150px, 300px, 400px);
+  height: 300px;
   padding: 20px;
   padding-top: 40px;
   padding-bottom: 80px;
   border-radius: 2px 2px 8px 8px;
 }
 .art .display .horizontal {
-  width: clamp(150px, 300px, 400px);
+  width: 300px;
   padding: 20px;
   padding-right: 40px;
   padding-left: 80px;
   border-radius: 8px 2px 2px 8px;
 }
 .art .display .random-rotation-1 {
-  transform: rotate(29deg);
+  transform: rotate(30deg);
 }
 .art .display .random-rotation-2 {
-  transform: rotate(-8deg);
+  transform: rotate(23deg);
 }
 .art .display .random-rotation-3 {
-  transform: rotate(4deg);
+  transform: rotate(2deg);
 }
 .art .display .random-rotation-4 {
-  transform: rotate(30deg);
+  transform: rotate(-22deg);
 }
 
 .footer {
